@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Moore Hill Farm & Garden</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Simple lightbox overlay for this page */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 12px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    }
+
+    .lightbox-close {
+      position: fixed;
+      top: 1.5rem;
+      right: 1.8rem;
+      font-size: 2rem;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV (same as main site but Gallery link highlighted) -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo-text">Moore Hill Farm & Garden</div>
+
+      <nav class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="gallery.html" style="font-weight:600;">Gallery</a>
+        <a href="index.html#family">Meet the Family</a>
+        <a href="index.html#how-to-buy">How to Buy</a>
+        <a href="index.html#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header fade-up">
+        <h2>Photo gallery</h2>
+        <p>A closer look at the fields, harvests, and market days at Moore Hill Farm &amp; Garden.</p>
+      </div>
+
+      <div class="gallery-grid fade-up delay-1">
+        <img src="images/Moore produce 1.jpg" alt="Fresh onions laid out to cure" />
+        <img src="images/Moore produce 2.jpg" alt="Raised beds full of crops" />
+        <img src="images/Moore small crops.jpg" alt="Greens and vegetables growing" />
+        <!-- Add more <img> tags here as you put more photos into images/ -->
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Moore Hill Farm &amp; Garden — Heflin, Louisiana
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Full size" />
+  </div>
+
+  <script>
+    // Simple lightbox logic
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const lightboxClose = document.getElementById("lightbox-close");
+
+    document.querySelectorAll(".gallery-grid img").forEach(img => {
+      img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = "flex";
+      });
+    });
+
+    lightboxClose.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>
