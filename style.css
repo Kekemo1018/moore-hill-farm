@@ -43,6 +43,15 @@ img {
     max-width: 760px;
 }
 
+.hero-logo {
+    width: min(280px, 80%);
+    height: 126px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 auto 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
+}
+
 .hero h1 {
     font-size: clamp(34px, 8vw, 48px);
     color: #fff;
@@ -78,6 +87,8 @@ img {
 .site-header {
     background: #fff;
     border-bottom: 1px solid #e8e8e8;
+    position: relative;
+    z-index: 10;
 }
 
 .nav {
@@ -88,8 +99,21 @@ img {
     padding: 18px 0;
 }
 
-.logo-text {
+.brand-link {
+    color: #2e4a2f;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
     font-weight: 700;
+    min-width: 0;
+}
+
+.brand-mark {
+    width: 58px;
+    height: 42px;
+    border-radius: 6px;
+    object-fit: cover;
+    flex: 0 0 auto;
 }
 
 .nav-links {
@@ -152,6 +176,11 @@ img {
     padding: 50px 5%;
 }
 
+.gallery-sub {
+    margin: 0 auto 28px;
+    max-width: 640px;
+}
+
 .gallery-grid {
     display: flex;
     flex-wrap: wrap;
@@ -164,6 +193,60 @@ img {
     aspect-ratio: 4 / 3;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.preview-grid img {
+    width: min(23%, 260px);
+}
+
+.gallery-actions {
+    margin-top: 28px;
+}
+
+.section {
+    padding: 56px 0;
+}
+
+.section-light {
+    background: #fbfbf7;
+}
+
+.section-header {
+    margin: 0 auto 28px;
+    max-width: 720px;
+    text-align: center;
+}
+
+.section-header h2 {
+    margin-bottom: 8px;
+}
+
+.gallery-page-grid {
+    align-items: stretch;
+}
+
+.gallery-page-grid figure {
+    margin: 0;
+    width: min(30%, 320px);
+    background: #fff;
+    border: 1px solid #e7e2d6;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 22px rgba(31, 46, 31, 0.08);
+}
+
+.gallery-page-grid img {
+    width: 100%;
+    border-radius: 0;
+    cursor: zoom-in;
+}
+
+.gallery-page-grid figcaption {
+    padding: 10px 12px 12px;
+    color: #40533e;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
 }
 
 /* BUY SECTION */
@@ -249,8 +332,14 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .gallery-grid img {
+    .gallery-grid img,
+    .gallery-page-grid figure {
         width: 100%;
+    }
+
+    .hero-logo {
+        height: 104px;
+        width: min(260px, 88%);
     }
 
     .contact {
