@@ -2,8 +2,9 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    color: #333;
+    color: #263626;
     line-height: 1.6;
+    background: #fffdf7;
 }
 
 * {
@@ -27,8 +28,8 @@ img {
 
 /* HERO SECTION */
 .hero {
-    min-height: 90vh;
-    padding: 32px 16px;
+    min-height: 78vh;
+    padding: 52px 16px;
     background: url("Moore Header.jpg") center/cover no-repeat;
     display: flex;
     align-items: center;
@@ -37,19 +38,11 @@ img {
 }
 
 .hero-overlay {
-    background: rgba(0,0,0,0.45);
-    padding: 40px 60px;
-    border-radius: 12px;
-    max-width: 760px;
-}
-
-.hero-logo {
-    width: min(280px, 80%);
-    height: 126px;
-    object-fit: cover;
+    background: rgba(22, 30, 21, 0.58);
+    padding: 46px 56px;
     border-radius: 8px;
-    margin: 0 auto 20px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
+    max-width: 780px;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.24);
 }
 
 .hero h1 {
@@ -89,6 +82,7 @@ img {
     border-bottom: 1px solid #e8e8e8;
     position: relative;
     z-index: 10;
+    box-shadow: 0 4px 18px rgba(37, 48, 34, 0.06);
 }
 
 .nav {
@@ -106,14 +100,17 @@ img {
     gap: 12px;
     font-weight: 700;
     min-width: 0;
+    font-size: 17px;
 }
 
 .brand-mark {
-    width: 58px;
-    height: 42px;
-    border-radius: 6px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
     object-fit: cover;
     flex: 0 0 auto;
+    border: 2px solid #eadfc9;
+    box-shadow: 0 4px 12px rgba(68, 48, 29, 0.14);
 }
 
 .nav-links {
@@ -121,7 +118,9 @@ img {
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-end;
-    gap: 14px;
+    gap: 18px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .nav-links a {
@@ -134,7 +133,7 @@ img {
 }
 
 .green {
-    background: #2e7d32;
+    background: #32743b;
     color: white;
 }
 
@@ -289,8 +288,8 @@ footer {
 
     .hero-overlay {
         width: 100%;
-        padding: 28px 20px;
-        border-radius: 10px;
+        padding: 34px 20px;
+        border-radius: 8px;
     }
 
     .hero-buttons,
@@ -337,11 +336,6 @@ footer {
         width: 100%;
     }
 
-    .hero-logo {
-        height: 104px;
-        width: min(260px, 88%);
-    }
-
     .contact {
         padding: 44px 20px;
     }
@@ -350,11 +344,13 @@ footer {
         align-items: flex-start;
         flex-direction: column;
         gap: 12px;
+        padding: 14px 0;
     }
 
     .nav-links {
         justify-content: flex-start;
-        gap: 10px 14px;
+        gap: 8px 16px;
+        font-size: 15px;
     }
 }
 
