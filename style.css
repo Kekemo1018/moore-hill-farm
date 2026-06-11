@@ -152,6 +152,11 @@ img {
     color: white;
 }
 
+.tt {
+    background: #111;
+    color: white;
+}
+
 /* ABOUT SECTION */
 .about {
     display: flex;
@@ -249,6 +254,90 @@ img {
 }
 
 /* BUY SECTION */
+.market-week {
+    background: #f2f6ed;
+    padding: 64px 0;
+}
+
+.market-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 460px);
+    align-items: stretch;
+    gap: 32px;
+}
+
+.market-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.eyebrow {
+    color: #32743b;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+}
+
+.market-copy h2 {
+    font-size: clamp(30px, 5vw, 44px);
+    line-height: 1.1;
+    margin: 0 0 14px;
+}
+
+.market-copy > p {
+    font-size: 18px;
+    margin-top: 0;
+    max-width: 620px;
+}
+
+.market-details {
+    background: #fff;
+    border: 1px solid #e0dccf;
+    border-radius: 8px;
+    margin: 10px 0 22px;
+    padding: 18px 20px;
+}
+
+.market-details p {
+    margin: 0;
+}
+
+.market-details p + p {
+    margin-top: 10px;
+}
+
+.market-actions,
+.contact-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.market-actions .btn,
+.contact-actions .btn {
+    margin: 0;
+}
+
+.map-card {
+    background: #fff;
+    border: 1px solid #e0dccf;
+    border-radius: 8px;
+    min-height: 360px;
+    overflow: hidden;
+    box-shadow: 0 10px 28px rgba(31, 46, 31, 0.1);
+}
+
+.map-card iframe {
+    border: 0;
+    display: block;
+    height: 100%;
+    min-height: 360px;
+    width: 100%;
+}
+
 .buy {
     padding: 60px 10%;
     background: #f7f7f7;
@@ -306,10 +395,34 @@ footer {
     }
 
     .about,
-    .buy {
+    .buy,
+    .market-layout {
         flex-direction: column;
         padding: 44px 20px;
         gap: 28px;
+    }
+
+    .market-week {
+        padding: 0;
+    }
+
+    .market-layout {
+        display: flex;
+    }
+
+    .market-actions,
+    .contact-actions {
+        display: grid;
+    }
+
+    .market-actions .btn,
+    .contact-actions .btn {
+        width: 100%;
+    }
+
+    .map-card,
+    .map-card iframe {
+        min-height: 300px;
     }
 
     .about-content,
