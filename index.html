@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moore Hill Farm & Garden</title>
-    <link rel="stylesheet" href="style.css?v=5">
+    <link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 
@@ -16,10 +16,11 @@
             </a>
 
             <nav class="nav-links" aria-label="Main navigation">
-                <a href="#about">About</a>
+                <a href="about.html">About</a>
                 <a href="#gallery">Gallery</a>
                 <a href="#where-this-week">This Week</a>
                 <a href="#how-to-buy">How to Buy</a>
+                <a href="#farm-updates">Farm Updates</a>
                 <a href="#contact" class="nav-cta">Contact</a>
             </nav>
         </div>
@@ -33,7 +34,7 @@
             <p class="sub-info">Family-run farm serving the Minden & Heflin area.</p>
 
             <div class="hero-buttons">
-                <a href="#about" class="btn green">About Us</a>
+                <a href="about.html" class="btn green">About Us</a>
                 <a href="gallery.html" class="btn green">View Gallery</a>
                 <a href="tel:+13185790320" class="btn outline">Call or Text to Pre-Order</a>
             </div>
@@ -61,9 +62,11 @@
                 <li>✔ Family-run & community-focused</li>
                 <li>✔ Proud partner of local farmers markets</li>
             </ul>
+
+            <a href="about.html" class="text-link">Read more about the farm</a>
         </div>
 
-        <img src="Moore produce 2.jpg" class="about-img">
+        <img src="Moore produce 2.jpg" alt="Fresh produce from Moore Hill Farm and Garden" class="about-img">
     </section>
 
 
@@ -150,6 +153,67 @@
             <a href="https://www.tiktok.com/@moorehill.farm.an" class="btn tt contact-btn">TikTok</a>
         </div>
     </section>
+
+    <!-- FARM UPDATES -->
+    <section id="farm-updates" class="newsletter-section" aria-labelledby="farm-updates-title">
+        <div class="container newsletter-layout">
+            <div class="newsletter-copy">
+                <p class="eyebrow">Farm Updates</p>
+                <h2 id="farm-updates-title">Get Farm Updates</h2>
+                <p>
+                    Join the MooreHill Farm Updates list for seasonal harvest updates, market schedules,
+                    fresh produce availability, gardening tips, recipes, farm news, and community events.
+                </p>
+            </div>
+
+            <form
+                class="newsletter-form"
+                name="farm-updates"
+                method="POST"
+                action="/thank-you.html"
+                data-netlify="true"
+                netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="farm-updates">
+                <input type="hidden" name="signup_source" value="homepage">
+
+                <p class="form-hidden">
+                    <label>Do not fill this out if you are human: <input name="bot-field"></label>
+                </p>
+
+                <div class="form-row">
+                    <label for="first-name">First Name</label>
+                    <input id="first-name" name="first_name" type="text" autocomplete="given-name" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email-address">Email Address</label>
+                    <input id="email-address" name="email" type="email" autocomplete="email" required>
+                </div>
+
+                <fieldset class="interest-fieldset">
+                    <legend>What would you like to hear about?</legend>
+                    <div class="interest-options">
+                        <label><input type="checkbox" name="interests" value="Fresh Produce"> Fresh Produce</label>
+                        <label><input type="checkbox" name="interests" value="Gardening Tips"> Gardening Tips</label>
+                        <label><input type="checkbox" name="interests" value="Recipes"> Recipes</label>
+                        <label><input type="checkbox" name="interests" value="Farm Tours & Events"> Farm Tours &amp; Events</label>
+                        <label><input type="checkbox" name="interests" value="Local Farm Updates"> Local Farm Updates</label>
+                    </div>
+                </fieldset>
+
+                <button class="btn green submit-btn" type="submit">Join the Farm List</button>
+                <p class="privacy-note">No spam. Just farm updates. Unsubscribe anytime.</p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-cta">
+            <span>Want fresh harvest updates?</span>
+            <a href="#farm-updates" class="btn green footer-btn">Join Farm Updates</a>
+        </div>
+        <p>© 2025 Moore Hill Farm &amp; Garden &mdash; Heflin, Louisiana</p>
+    </footer>
 
 </body>
 </html>
