@@ -239,8 +239,14 @@ img {
     text-align: center;
 }
 
+.section-header h1,
 .section-header h2 {
     margin-bottom: 8px;
+}
+
+.section-header h1 {
+    font-size: clamp(30px, 5vw, 40px);
+    line-height: 1.12;
 }
 
 .gallery-page-grid {
