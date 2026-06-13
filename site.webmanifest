@@ -1,0 +1,17 @@
+{
+  "name": "MooreHill Farm and Garden",
+  "short_name": "MooreHill Farm",
+  "description": "Family-owned farm in Heflin, Louisiana growing fresh produce, seasonal vegetables, greens, and local crops.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fffdf7",
+  "theme_color": "#2f6f3e",
+  "icons": [
+    {
+      "src": "/images/brand/moore-hill-logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
