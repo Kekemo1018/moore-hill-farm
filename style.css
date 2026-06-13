@@ -334,6 +334,10 @@ img {
     gap: 10px;
 }
 
+.contact-actions {
+    justify-content: center;
+}
+
 .market-actions .btn,
 .contact-actions .btn {
     margin: 0;
