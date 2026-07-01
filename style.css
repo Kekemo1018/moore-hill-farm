@@ -533,7 +533,10 @@ img {
 
 /* ABOUT PAGE */
 .page-hero {
-    background: linear-gradient(rgba(28, 39, 27, 0.54), rgba(28, 39, 27, 0.54)), url("Family-team.jpg") center/cover no-repeat;
+    background:
+        radial-gradient(circle at center, rgba(28, 39, 27, 0.2), rgba(28, 39, 27, 0.72) 72%),
+        linear-gradient(rgba(28, 39, 27, 0.66), rgba(28, 39, 27, 0.74)),
+        url("images/gallery/farm-family.jpg") center 38% / cover no-repeat;
     color: #fff;
     padding: 92px 0;
     text-align: center;
@@ -543,12 +546,14 @@ img {
     font-size: clamp(36px, 7vw, 58px);
     line-height: 1.08;
     margin: 0 0 14px;
+    text-shadow: 0 3px 16px rgba(0, 0, 0, 0.34);
 }
 
 .page-hero p {
     font-size: clamp(18px, 3vw, 22px);
     margin: 0 auto;
     max-width: 760px;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.34);
 }
 
 .story-section {
@@ -643,8 +648,9 @@ img {
 /* BLOG */
 .blog-hero {
     background:
-        linear-gradient(rgba(28, 39, 27, 0.56), rgba(28, 39, 27, 0.56)),
-        url("images/gallery/raised-beds.jpg") center/cover no-repeat;
+        radial-gradient(circle at center, rgba(28, 39, 27, 0.12), rgba(28, 39, 27, 0.68) 76%),
+        linear-gradient(rgba(28, 39, 27, 0.55), rgba(28, 39, 27, 0.68)),
+        url("images/gallery/market-stand.jpg") center 46% / cover no-repeat;
     color: #fff;
     padding: 92px 0;
     text-align: center;
