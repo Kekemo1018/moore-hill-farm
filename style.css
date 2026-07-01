@@ -89,11 +89,11 @@ img {
 
 /* GALLERY PAGE NAV */
 .site-header {
-    background: #f7f1e8;
-    border-bottom: 1px solid rgba(90, 60, 35, 0.12);
+    background: #fff;
+    border-bottom: 1px solid #e8e8e8;
     position: relative;
     z-index: 10;
-    box-shadow: 0 4px 18px rgba(37, 48, 34, 0.08);
+    box-shadow: 0 4px 18px rgba(37, 48, 34, 0.06);
 }
 
 .nav {
@@ -129,18 +129,13 @@ img {
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-end;
-    gap: 14px 16px;
+    gap: 18px;
     font-size: 16px;
     font-weight: 700;
 }
 
 .nav-links a {
     color: #2e4a2f;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-    color: #32743b;
 }
 
 .nav-cta {
@@ -640,163 +635,6 @@ img {
     max-width: 620px;
 }
 
-/* BLOG */
-.blog-hero {
-    background:
-        linear-gradient(rgba(28, 39, 27, 0.56), rgba(28, 39, 27, 0.56)),
-        url("images/gallery/raised-beds.jpg") center/cover no-repeat;
-    color: #fff;
-    padding: 92px 0;
-    text-align: center;
-}
-
-.blog-hero .eyebrow {
-    color: #f7d99b;
-}
-
-.blog-hero h1 {
-    font-size: clamp(36px, 7vw, 58px);
-    line-height: 1.08;
-    margin: 0 0 14px;
-}
-
-.blog-hero p:not(.eyebrow) {
-    font-size: clamp(18px, 3vw, 22px);
-    margin: 0 auto;
-    max-width: 760px;
-}
-
-.blog-list-section {
-    background: #fffdf7;
-    padding: 64px 0;
-}
-
-.blog-list {
-    display: grid;
-    gap: 24px;
-}
-
-.blog-card {
-    background: #fff;
-    border: 1px solid #e3dccd;
-    border-radius: 12px;
-    box-shadow: 0 16px 38px rgba(31, 46, 31, 0.12);
-    display: grid;
-    grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
-    overflow: hidden;
-}
-
-.blog-card img {
-    height: 100%;
-    min-height: 300px;
-    object-fit: cover;
-    width: 100%;
-}
-
-.blog-card-copy {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 34px;
-}
-
-.blog-date,
-.article-byline {
-    color: #6b5a3d;
-    font-size: 14px;
-    font-weight: 800;
-    letter-spacing: 0.06em;
-    margin: 0 0 10px;
-    text-transform: uppercase;
-}
-
-.blog-card h2 {
-    font-size: clamp(28px, 4vw, 38px);
-    line-height: 1.12;
-    margin: 0 0 14px;
-}
-
-.blog-card p {
-    margin-top: 0;
-}
-
-.article-page {
-    background: #fffdf7;
-    padding: 56px 0 72px;
-}
-
-.article-container {
-    margin: 0 auto;
-    max-width: 860px;
-    width: min(860px, calc(100% - 32px));
-}
-
-.back-link {
-    color: #32743b;
-    display: inline-block;
-    font-weight: 800;
-    margin-bottom: 22px;
-}
-
-.article-container h1 {
-    font-size: clamp(34px, 7vw, 56px);
-    line-height: 1.08;
-    margin: 0 0 12px;
-}
-
-.article-feature-image {
-    border-radius: 12px;
-    box-shadow: 0 16px 38px rgba(31, 46, 31, 0.13);
-    margin: 28px 0 32px;
-    max-height: 470px;
-    object-fit: cover;
-    width: 100%;
-}
-
-.article-body {
-    color: #263626;
-    font-size: 18px;
-}
-
-.article-body p {
-    margin: 0 0 18px;
-}
-
-.article-body h2 {
-    font-size: clamp(28px, 4vw, 38px);
-    line-height: 1.15;
-    margin: 36px 0 14px;
-}
-
-.caption-card {
-    background: #f7f1e8;
-    border: 1px solid #e3d4bd;
-    border-radius: 12px;
-    margin: 30px 0;
-    padding: 24px;
-}
-
-.caption-card p {
-    margin: 0;
-    padding-left: 18px;
-    position: relative;
-}
-
-.caption-card p::before {
-    background: #32743b;
-    border-radius: 999px;
-    content: "";
-    height: 6px;
-    left: 0;
-    position: absolute;
-    top: 0.72em;
-    width: 6px;
-}
-
-.caption-card p + p {
-    margin-top: 12px;
-}
-
 @media (max-width: 760px) {
     .hero {
         min-height: 82vh;
@@ -844,9 +682,7 @@ img {
     }
 
     .newsletter-section,
-    .story-section,
-    .blog-list-section,
-    .article-page {
+    .story-section {
         padding: 0;
     }
 
@@ -926,27 +762,6 @@ img {
 
     .page-hero {
         padding: 62px 0;
-    }
-
-    .blog-hero {
-        padding: 62px 0;
-    }
-
-    .blog-card {
-        grid-template-columns: 1fr;
-    }
-
-    .blog-card img {
-        min-height: 230px;
-    }
-
-    .blog-card-copy,
-    .caption-card {
-        padding: 22px;
-    }
-
-    .article-container {
-        padding: 44px 0;
     }
 
     .footer-cta {
