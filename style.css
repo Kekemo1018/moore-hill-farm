@@ -5,7 +5,7 @@ html {
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #263626;
     line-height: 1.6;
     background: #fffdf7;
@@ -89,7 +89,7 @@ img {
 
 /* GALLERY PAGE NAV */
 .site-header {
-    background: #f7f1e8;
+    background: linear-gradient(180deg, #fbf6ed 0%, #f4eadc 100%);
     border-bottom: 1px solid rgba(90, 60, 35, 0.12);
     position: relative;
     z-index: 10;
@@ -135,15 +135,21 @@ img {
 }
 
 .nav-links a {
+    border-radius: 999px;
     color: #2e4a2f;
+    line-height: 1;
+    padding: 8px 10px;
+    transition: background-color 160ms ease, color 160ms ease;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
+    background: rgba(50, 116, 59, 0.08);
     color: #32743b;
 }
 
 .nav-cta {
+    background: rgba(50, 116, 59, 0.12);
     color: #2e7d32;
     font-weight: 700;
 }
@@ -422,6 +428,12 @@ img {
     max-width: 620px;
 }
 
+.newsletter-routing-note {
+    color: #586852;
+    font-size: 15px !important;
+    font-weight: 700;
+}
+
 .newsletter-form {
     background: #fff;
     border: 1px solid #e3dccd;
@@ -445,6 +457,14 @@ img {
     font-size: 14px;
     font-weight: 800;
     margin-bottom: 8px;
+}
+
+.optional-label {
+    color: #6b5a3d;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 6px;
+    text-transform: uppercase;
 }
 
 .form-row input {
@@ -534,9 +554,9 @@ img {
 /* ABOUT PAGE */
 .page-hero {
     background:
-        radial-gradient(circle at center, rgba(28, 39, 27, 0.2), rgba(28, 39, 27, 0.72) 72%),
-        linear-gradient(rgba(28, 39, 27, 0.66), rgba(28, 39, 27, 0.74)),
-        url("images/gallery/farm-family.jpg") center 38% / cover no-repeat;
+        radial-gradient(circle at center, rgba(28, 39, 27, 0.06), rgba(28, 39, 27, 0.64) 76%),
+        linear-gradient(rgba(28, 39, 27, 0.56), rgba(28, 39, 27, 0.7)),
+        url("images/gallery/farm-family.jpg") center 44% / cover no-repeat;
     color: #fff;
     padding: 92px 0;
     text-align: center;
@@ -648,9 +668,9 @@ img {
 /* BLOG */
 .blog-hero {
     background:
-        radial-gradient(circle at center, rgba(28, 39, 27, 0.12), rgba(28, 39, 27, 0.68) 76%),
-        linear-gradient(rgba(28, 39, 27, 0.55), rgba(28, 39, 27, 0.68)),
-        url("images/gallery/market-stand.jpg") center 46% / cover no-repeat;
+        radial-gradient(circle at center, rgba(28, 39, 27, 0.08), rgba(28, 39, 27, 0.64) 76%),
+        linear-gradient(rgba(28, 39, 27, 0.52), rgba(28, 39, 27, 0.7)),
+        url("images/gallery/market-stand.jpg") center 52% / cover no-repeat;
     color: #fff;
     padding: 92px 0;
     text-align: center;
@@ -690,6 +710,10 @@ img {
     display: grid;
     grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
     overflow: hidden;
+}
+
+.blog-card:hover {
+    box-shadow: 0 20px 44px rgba(31, 46, 31, 0.16);
 }
 
 .blog-card img {
@@ -926,7 +950,7 @@ img {
 
     .nav-links {
         justify-content: flex-start;
-        gap: 8px 16px;
+        gap: 8px;
         font-size: 15px;
     }
 
