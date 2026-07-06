@@ -20,10 +20,16 @@ Production rule: do not merge or publish until KM Logic and Moore Hill Farm appr
 ## Needs Review Before Publishing
 
 - Derek should approve the composting article wording before it goes live.
-- Derek should approve whether the article image should stay as the raised beds photo or be replaced with composting-specific photos.
+- Derek should approve whether the blog hero, blog card, and article images are the best available farm photos for this post.
 - KM Logic should confirm the Netlify form submissions are being collected under the correct site and form name.
 - KM Logic should confirm whether the July newsletter is ready to send through Mailchimp.
 - KM Logic should confirm whether Blog should publish now or wait until additional posts/photos are ready.
+
+## Photo Process Rule
+
+- For every future blog post, check the Moore Hill Farm Drive folder for fresh, clean photos first.
+- Avoid reusing the same hero, card, and article images across multiple posts unless there is no better client approved option.
+- Keep customer facing photos natural, clear, well cropped, and relevant to the post topic.
 
 ## Recommended Future Updates
 

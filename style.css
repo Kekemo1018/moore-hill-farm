@@ -668,9 +668,9 @@ img {
 /* BLOG */
 .blog-hero {
     background:
-        radial-gradient(circle at center, rgba(28, 39, 27, 0.08), rgba(28, 39, 27, 0.64) 76%),
-        linear-gradient(rgba(28, 39, 27, 0.52), rgba(28, 39, 27, 0.7)),
-        url("images/gallery/market-stand.jpg") center 52% / cover no-repeat;
+        radial-gradient(circle at center, rgba(28, 39, 27, 0.08), rgba(28, 39, 27, 0.66) 78%),
+        linear-gradient(rgba(28, 39, 27, 0.5), rgba(28, 39, 27, 0.72)),
+        url("images/gallery/family-at-farm-sign.jpg") center 46% / cover no-repeat;
     color: #fff;
     padding: 92px 0;
     text-align: center;
@@ -959,6 +959,7 @@ img {
     }
 
     .blog-hero {
+        background-position: center 34%;
         padding: 62px 0;
     }
 
